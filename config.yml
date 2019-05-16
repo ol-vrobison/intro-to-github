@@ -33,7 +33,7 @@ steps:
 # 1
 - title: Jira Ticket Creation and Branch Creation
   description: Create a Jira Ticket and a Branch.
-  event: issues.opened
+  event: issues.assigned
   link: '{{ repoUrl }}/issues/1'
   actions:
   - type: respond
