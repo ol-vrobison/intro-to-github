@@ -22,7 +22,8 @@ before:
 - type: createIssue
   title: Getting Started with GitHub
   body: introduction.md
-  comments: assign-yourself.md
+  comments:
+    - assign-yourself.md
 
 # Course artifacts:
 #   1. Issue: Getting started with GitHub
