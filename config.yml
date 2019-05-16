@@ -22,6 +22,7 @@ before:
 - type: createIssue
   title: Getting Started with GitHub
   body: introduction.md
+  comments: assign-yourself.md
 
 # Course artifacts:
 #   1. Issue: Getting started with GitHub
@@ -37,10 +38,8 @@ steps:
   link: '{{ repoUrl }}/issues/1'
   actions:
   - type: respond
-    issue: Your Branch Creation
     with: jira_create_ticket.md
-    data:
-      thePayload: '%payload%'
+
 
 # 5
 - title: Set the Jira status to In Progress and Modify a file
