@@ -35,12 +35,12 @@ steps:
   description: Create a Jira Ticket and a Branch.
   event: issues.opened
   link: '{{ repoUrl }}/issues/1'
-    actions:
-    - type: respond
-      issue: Your Branch Creation
-      with: jira_create_ticket.md
-      data:
-        thePayload: '%payload%'
+  actions:
+  - type: respond
+    issue: Your Branch Creation
+    with: jira_create_ticket.md
+    data:
+      thePayload: '%payload%'
 
 # 5
 - title: Set the Jira status to In Progress and Modify a file
