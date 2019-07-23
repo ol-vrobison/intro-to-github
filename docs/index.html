@@ -199,7 +199,15 @@
     nodes: nodes,
     edges: edges
   };
-  var options = {};
+  var options = {layout: {
+          hierarchical: {
+            sortMethod: "hubsize"
+          }
+        },
+        edges: {
+          smooth: true,
+          arrows: {to : true }
+        }};
   var network = new vis.Network(container, data, options);
 </script>
 
