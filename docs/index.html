@@ -59,7 +59,7 @@
 {id: "n1816" , label:"Gmf"},
 {id: "n1817" , label:"HyundaiKia"},
 {id: "n1818" , label:"IdealUI"},
-{id: "n1819" , label:"LES"},
+{id: "n1819" , label:"LES", chosen: { label: false, edge: changeChosenEdgeColor }},
 {id: "n1820" , label:"LoginContextWebAPI"},
 {id: "n1821" , label:"MaturitySearch"},
 {id: "n1822" , label:"MobileUI"},
@@ -192,7 +192,10 @@
 {from:"n1820" ,to:"n1787"},
 
   ]);
-
+var changeChosenEdgeColor =
+    function(values, id, selected, hovering) {
+      values.color = "#ff0000";
+    }
   // create a network
   var container = document.getElementById('mynetwork');
   var data = {
